@@ -13,3 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
+/.idea/compiler.xml
+/.idea/intellij-javadocs-4.0.1.xml
+/.idea/misc.xml
+/.idea/gradle.xml
+/.idea/vcs.xml
+/.idea/git_toolbox_prj.xml

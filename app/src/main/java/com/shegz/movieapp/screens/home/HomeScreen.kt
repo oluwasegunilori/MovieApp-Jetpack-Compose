@@ -1,9 +1,11 @@
 package com.shegz.movieapp.screens.home
 
+import androidx.compose.animation.ExperimentalAnimationApi
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -22,10 +24,10 @@ fun HomeScreen(navController: NavController) {
     Scaffold(
         topBar = {
             TopAppBar(
-                backgroundColor = Color.Magenta,
+                backgroundColor = Color.White,
                 elevation = 5.dp
             ) {
-                Text(text = "Movies")
+                Text(text = "Movies", style = MaterialTheme.typography.h4)
 
             }
         }
@@ -35,6 +37,7 @@ fun HomeScreen(navController: NavController) {
 
 }
 
+@OptIn(ExperimentalAnimationApi::class)
 @Composable
 fun MainContent(
     navController: NavController,
